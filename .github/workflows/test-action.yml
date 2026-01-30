@@ -1,0 +1,17 @@
+name: Test GitHub Action
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: 25ds1000097@ds.study.iitm.ac.in
+        run: echo "Hello from GitHub Actions"
